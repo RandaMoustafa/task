@@ -1,0 +1,35 @@
+header{
+background: linear-gradient(to left, #b6dbf2
+, white);}
+nav{
+    text-align: center;
+    font-size: xx-large;
+}
+.body{
+    text-align: center;
+    width: 100%;
+    background-image: url(mountain-5431950_1920.png);
+}
+h1{
+    font-size: xx-large;
+    font-style: italic;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  p{
+    font-size: x-large;padding-left: 30%;
+}
+thead{
+    background-color:aquamarine;
+    color:blue;
+}
+tbody{
+    background-color: cornsilk;
+    color: blue;
+}
+footer{
+    text-align: center;
+    }
+    

@@ -1,0 +1,23 @@
+header{
+background: linear-gradient(to left, #b6dbf2
+, white);}
+nav{
+    text-align: center;
+    font-size: xx-large;
+}
+h1{
+    text-align: center;
+    color:rgb(36, 2, 36);
+    font-style: italic;
+    
+}
+body{
+    width: 100%;
+    height: 600px;
+    
+    background-image: url("mountain-5431950_1920.png");
+    background-size: cover;
+}
+footer{
+    text-align: center;
+}
