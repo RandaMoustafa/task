@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+        
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="portofolio" content=" A site helps you to create your owen resume"/>
+        <meta name="author" content="randa moustafa"/>
+        <meta name="key words" content="cv,resume,graphic,web,full stack,art"/>
+   
+        
+    <title>Portofolio</title>
+    <style>
+        nav{
+            font-size:xx-large;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+        <nav>
+        <center>
+            <a href="task.html."> Home|</a>
+            <a href="about.html"> About |</a>
+            <a href="contact.html"> Contact Us</a>
+       </center>
+        </nav>   
+        <img src="rm.jpg" width="300" height="300" alt="This is alogo">
+        <hr>
+    </div>
+    <div class="body">
+        <center><h1>Hello.......</h1></center>
+        <center><h1> My Name is Randa</h1></center>
+        <center><h1> An art teacher, graphic Designer and web fullstack developer</h1></center>
+        <hr>
+    </div>
+    <div class="footer">
+        <center>
+            Copyright &copy; made with Randa Moustafa &hearts;
+        </center>  
+    </div>
+    </body>
+    
+
+</html>
