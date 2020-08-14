@@ -51,7 +51,7 @@ ul{
     color: #fed136;
     font-weight: bold;
 }
-.navbar.nav-items .links ul li{
+.navbar .nav-items .links ul li{
     display: inline-block;
     padding: 0 8px;
 }
