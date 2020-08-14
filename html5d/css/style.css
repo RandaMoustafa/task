@@ -1,0 +1,61 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.7rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.clear{
+    clear: both;
+}
+.text-center{
+    text-align: center;
+}
+.bg-dark{
+    background-color: #2f2f2f;
+}
+.text-primary{
+    color: #fed136;
+}
+.text-white{
+    color: white;
+
+}
+/*navbar style*/
+.navbar{
+    padding: 16px 0;
+}
+.navbar .nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .nav-items .logos a{
+    font-size: 2rem;
+    color: #fed136;
+    font-weight: bold;
+}
+.navbar.nav-items .links ul li{
+    display: inline-block;
+    padding: 0 8px;
+}
+.navbar .nav-items .links ul li a:hover{
+    color: #fed136;
+
+}
