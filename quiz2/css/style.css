@@ -1,0 +1,123 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Acme', sans-serif;
+    line-height: 1.7rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.clear{
+    clear: both;
+}
+.text-center{
+    text-align: center;
+}
+.bg-dark{
+    background-color: #2f2f2f;
+}
+.text-primary{
+    color:white;
+}
+.bg-primary{
+    background-color: red;
+}
+.text-white{
+    color: white;
+}
+.text-red{
+    color: red;
+}
+/*navbar style*/
+.navbar{
+    padding: 16px 0;
+}
+.navbar .nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .nav-items .logos a{
+    font-size: 2rem;
+    color:white;
+    font-weight: bold;
+}
+.navbar .nav-items .links ul li{
+    display: inline-block;
+    padding: 0 8px;
+}
+.navbar .nav-items .links ul li a:hover{
+    background: grey;
+    color:rgba(255, 255, 255, 0.692):
+    opacity: .8;
+}
+/*showcase style*/
+.showcase{
+    height: 400px;
+    background: url("../images/banner/damon-rice-FZHWvkquK2o-unsplash.jpg") no-repeat
+     center center/cover;
+}
+.showcase .showcase-text{
+    padding: 140px;
+}
+.showcase .subheading{
+    font-size: 1.8rem;
+    word-spacing: 8px;
+    font-style: italic;
+    padding: 5px 0;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: 600px;
+}
+.showcase .showcase-text .mashead-heading{
+    font-size: 1rem;
+    word-spacing: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 35px 0;
+    text-shadow: 1px 1px 1px #fff;
+}
+.showcase .showcase-text button{
+    border: none;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.178);
+}
+/*elements*/
+.elements{
+    margin-top: 100px;
+}
+.elements .row{
+    display: flex;
+    margin-top: 50px;
+}
+.elements .row .col{
+    padding: 20px;
+}
+.elements .row .col h3{
+    margin: 25px 0;
+    font-size: 2rem;
+}
+.elements .row .col h3:before{
+    content:icon;
+}
+/*images*/
+.images .row{
+    display: flex;
+    justify-content: center;
+}
