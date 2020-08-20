@@ -239,6 +239,15 @@ footer a:hover{
     bottom: 400px;
 
 }
+.shortcut .contact-us .address a::before{
+    content: url(../images/icons/map-icon.png);
+}
+.shortcut .contact-us .call a::before{
+    content: url(../images/icons/call-icon.png);
+}
+.shortcut .contact-us .email a::before{
+    content: url(../images/icons/mail-icon.png);
+}
 /*footer*/
 footer a{
     color: black;
