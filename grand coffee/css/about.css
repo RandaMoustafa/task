@@ -1,0 +1,176 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container2{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px ;
+}
+.clear{
+    clear: both;
+}
+.text-center{
+    text-align: center;
+}
+.bg-dark{
+    background-color: #2f2f2f;
+}
+.bg-primary{
+    background-color: #fed136;
+}
+.text-white{
+    color: white;
+}
+.text-orange{
+    color: rgb(255, 101, 45);
+}
+/*navbar style*/
+
+.navbar{
+    padding: 30px 0;
+}
+.navbar .logo{
+    position: relative;
+    top: 10px;
+}
+.navbar .nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .nav-items .links ul li{
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 17px;
+    position: relative;
+    top: 10px;
+}
+.navbar .nav-items .links ul li a:hover ,
+.navbar .nav-items .links ul li a i:hover ,
+footer a:hover{
+    color: rgb(255, 101, 45);  
+}
+.navbar .nav-items .links .search a:hover{
+    color: rgb(255, 101, 45);  
+}
+.navbar .nav-items .links .home a:visited{
+    color: rgb(255, 101, 45);  
+
+}
+/*subheading*/
+.subheading{
+    padding-top: 200px;
+    line-height: 20px;
+}
+.subheading h2{
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+}
+.subheading p{
+    width: 50%;
+    font-size: 1.2rem;
+}
+.subheading img{
+    position: relative;
+    left: 550px;
+    bottom: 390px;
+}
+.subheading button{
+    border: none;
+    padding: 15px;
+    width: 160px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+/*shortcut*/
+.shortcut{
+    background-color: #2f2f2f;
+    position: relative;
+    bottom: 350px;
+    height: 400px;
+}
+.shortcut .about-1{
+    width: 20%;
+}
+.shortcut .about-1 h6{
+    position: relative;
+    top: 90px;
+    left: 40px;
+    font-size: 1.5rem;
+}
+.shortcut .about-1 p{
+    position: relative;
+    left: 40px;
+    top: 120px;
+}
+.shortcut .menu{
+    width: 20%;
+}
+.shortcut .menu h6{
+    position: relative;
+    left: 350px;
+    font-size:1.5rem ;  
+    top: -100px;    
+}
+.shortcut .menu ul{
+    position: relative;
+    left: 360px ;
+    bottom: 70px;
+}
+.shortcut .useful{
+    width: 20%;
+}
+.shortcut .useful h6{
+    position: relative;
+    font-size: 1.5rem;
+    left: 650px;
+    top: -260px;
+}
+.shortcut .useful p{
+    position: relative;
+    left: 650px;
+    top: -230px;
+}
+.shortcut .contact-us{
+  width: 20%;
+}
+.shortcut .contact-us h6{
+  font-size: 1.5rem;
+  position: relative;
+  top: -20px;
+  
+}
+.shortcut .contact-us{
+  position: relative;
+  left:950px ;
+  bottom: 400px;
+
+}
+/*footer*/
+footer a{
+  color: black;
+}
+footer{
+  position: relative;
+  top: -340px;
+}
