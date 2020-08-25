@@ -11,7 +11,7 @@ body,html{
     line-height: 1.7rem;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
 }
 ul{
@@ -38,15 +38,19 @@ ul{
     color: white;
 }
 .text-orange{
-    color: rgb(255, 101, 45);
+    color:#f76d37;
 }
+
 /*navbar style*/
+
 .navbar{
-    padding: 30px 0;
+    padding: 20px 0;
+    background-color: #252525;
 }
 .navbar .logo{
     position: relative;
-    top: 10px;
+    top: 2px;
+    right: 80px;
 }
 .navbar .nav-items{
     display: flex;
@@ -58,9 +62,11 @@ ul{
     font-size: 17px;
     position: relative;
     top: 10px;
+    left: 90px;
 }
 .navbar .nav-items .links ul li a:hover ,
 .navbar .nav-items .links ul li a i:hover ,
+.shortcut .menu ul a:hover ,
 footer a:hover{
     color: rgb(255, 101, 45);  
 }
@@ -71,43 +77,54 @@ footer a:hover{
     color: rgb(255, 101, 45);  
 
 } 
- /*contact*/
- .contact{
+  /*contact*/
+  .contact{
     position: relative;
-    top: 100px;
+    top: 120px;
+    flex-wrap: wrap;
 }
 .contact h1{
     font-size: 2.5rem;
     font-weight: bold;
 }
 .contact .info{
-   width:700px;
-   background: url(../images/contact/img-10.png);
+   width:680px;
+   background: url(../images/contact/img-9.png);
    background-size: cover;
    position: relative;
-   top: 50px;
-   height: 500px;
+   top: 100px;
+   height: 550px;
 }
-.contact .info form{
-    padding-top: 50px;
+form{
+    position: relative;
+    top: 40px;
+    left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.contact .info form input{
-    width: 500px;
+input[type=text] , input[type=email] , input[type=tel] , textarea{
+    width: 70%;
+    padding: 12px;
     border: none;
-    border-radius: 15px;
-    height: 50px;
+    border-radius: 20px;
+}
+input , textarea:focus{
+    outline: none;
+}
+input::placeholder ,
+textarea::placeholder{
+    padding-left: 20px;
+}
+textarea::placeholder{
+    padding-top: 50px;
+
 }
 .contact .map{
-    width: 50%;
     position: relative;
+    left: 680px;
     bottom: 450px;
-    left: 650px;
 }
-
-
-
 .contact button{
-  background-color: rgb(255, 101, 45);
+  background-color: #d33a11;
   color: white;
   font-size: 1rem;
   padding: 15px;
@@ -115,9 +132,8 @@ footer a:hover{
   border: none;
   border-radius: 50px;
   position: relative;
-  top: -2px;
-  left: 10px;
-
+  top: 60px;
+  left: 200px;
 }
 .contact button:hover{
     color: black;
@@ -127,74 +143,95 @@ footer a:hover{
 .shortcut{
     background-color: #2f2f2f;
     position: relative;
-    bottom: 350px;
+    bottom: 100px;
     height: 400px;
+    margin-top: -220px;
 }
 .shortcut .about-1{
     width: 20%;
+    padding-top: 30px;
 }
-.shortcut .about-1 h6{
+.shortcut .about-1 h3{
     position: relative;
     top: 90px;
     left: 40px;
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
 }
 .shortcut .about-1 p{
     position: relative;
     left: 40px;
     top: 120px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .shortcut .menu{
     width: 20%;
 }
-.shortcut .menu h6{
+.shortcut .menu h3{
     position: relative;
-    left: 350px;
-    font-size:1.5rem ;  
-    top: -100px;    
+    left: 320px;
+    font-size:24px;  
+    font-weight: bold; 
+    bottom: 130px;   
 }
 .shortcut .menu ul{
     position: relative;
-    left: 360px ;
-    bottom: 70px;
+    left: 320px ;
+    bottom: 90px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .shortcut .useful{
     width: 20%;
 }
-.shortcut .useful h6{
+.shortcut .useful h3{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
     left: 650px;
-    top: -260px;
+    bottom: 310px;
 }
 .shortcut .useful p{
     position: relative;
     left: 650px;
-    top: -230px;
+    top: -280px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .shortcut .contact-us{
   width: 20%;
 }
-.shortcut .contact-us h6{
-  font-size: 1.5rem;
+.shortcut .contact-us h3{
+  font-size: 24px;
+  font-weight: bold;
   position: relative;
-  top: -20px;
+  top: -40px;
   
 }
 .shortcut .contact-us{
   position: relative;
   left:950px ;
-  bottom: 400px;
+  bottom: 450px;
+  translate: ;
 
 }
+.shortcut .contact-us a:hover ,
+.shortcut .menu li a:hover{
+  color:#d33a11 ;
+  transition: color 2s ease-in-out  ;
+}
+.shortcut .contact-us .email{
+  font-size: 15px;
+}
 .shortcut .contact-us .address a::before{
-    content: url(../images/icons/map-icon.png);
+  content: url(../images/icons/pin\ \(1\).png)
 }
 .shortcut .contact-us .call a::before{
-    content: url(../images/icons/call-icon.png);
+  content: url(../images/icons/phone\ \(2\).png);
 }
 .shortcut .contact-us .email a::before{
-    content: url(../images/icons/mail-icon.png);
+  content: url(../images/icons/mail\ \(2\).png);
 }
 /*footer*/
 footer a{
@@ -202,5 +239,8 @@ footer a{
 }
 footer{
   position: relative;
-  top: -340px;
+  top: -70px;
 }
+
+
+

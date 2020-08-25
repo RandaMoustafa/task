@@ -11,7 +11,7 @@ body,html{
     line-height: 1.7rem;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: white;
 }
 ul{
@@ -19,11 +19,6 @@ ul{
 }
 .container{
     width: 95%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.container2{
-    width:80%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -43,15 +38,19 @@ ul{
     color: white;
 }
 .text-orange{
-    color: rgb(255, 101, 45);
+    color:#f76d37;
 }
+
 /*navbar style*/
+
 .navbar{
-    padding: 30px 0;
+    padding: 20px 0;
+    background-color: #252525 !important;
 }
 .navbar .logo{
     position: relative;
-    top: 10px;
+    top: 2px;
+    right: 80px;
 }
 .navbar .nav-items{
     display: flex;
@@ -63,9 +62,11 @@ ul{
     font-size: 17px;
     position: relative;
     top: 10px;
+    left: 90px;
 }
 .navbar .nav-items .links ul li a:hover ,
 .navbar .nav-items .links ul li a i:hover ,
+.shortcut .menu ul a:hover ,
 footer a:hover{
     color: rgb(255, 101, 45);  
 }
@@ -76,28 +77,47 @@ footer a:hover{
     color: rgb(255, 101, 45);  
 
 } 
-/*gallery*/
- .gallery h1{
-     margin-top: 100px;
-     margin-bottom: 30px;
-     font-size: 40px;
-     font-weight: bold;
- }
- .gallery p{
-    font-size: 15px;
- }
- .gallery .row{ 
-    margin-top: 60px;
+
+/*Gallery*/
+.gallery{
+    margin-top: 100px;
+}
+.gallery h2{
+    font-size: 40px;
+    font-weight: bold;    
+}
+.gallery p{
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left:-50px;
+}
+.gallery .row{ 
+    margin-top: 40px;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .gallery .row .galleryphoto img{
-    margin: 20px;
+    margin: 15px;
+    width: 330px;
+    height: 300px;
+    
+
 }
 .gallery .row .galleryphoto img:hover{
     opacity: .7;
+}
+.gallery button{
+    position: relative;
+    top: -30px;
+    width: 170px;
+    padding: 10px;
+    margin-right: 50px;
+}
+.gallery button:hover{
+    color: white;
+    background-color: rgb(255, 101, 45);
 }
 .gallery button{
     position: relative;
@@ -110,82 +130,100 @@ footer a:hover{
     background-color: #2f2f2f;
     color: white;
 }
-.gallery button:hover{
-    color: white;
-    background-color: rgb(255, 101, 45);
-}
+
 /*shortcut*/
 .shortcut{
     background-color: #2f2f2f;
     position: relative;
     bottom: 100px;
     height: 400px;
+    margin-top: 110px;
 }
 .shortcut .about-1{
     width: 20%;
+    padding-top: 30px;
 }
-.shortcut .about-1 h6{
+.shortcut .about-1 h3{
     position: relative;
     top: 90px;
     left: 40px;
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
 }
 .shortcut .about-1 p{
     position: relative;
     left: 40px;
     top: 120px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .shortcut .menu{
     width: 20%;
 }
-.shortcut .menu h6{
+.shortcut .menu h3{
     position: relative;
-    left: 350px;
-    font-size:1.5rem ;  
-    top: -100px;    
+    left: 320px;
+    font-size:24px;  
+    font-weight: bold; 
+    bottom: 130px;   
 }
 .shortcut .menu ul{
     position: relative;
-    left: 360px ;
-    bottom: 70px;
+    left: 320px ;
+    bottom: 90px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .shortcut .useful{
     width: 20%;
 }
-.shortcut .useful h6{
+.shortcut .useful h3{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
     left: 650px;
-    top: -260px;
+    bottom: 310px;
 }
 .shortcut .useful p{
     position: relative;
     left: 650px;
-    top: -230px;
+    top: -280px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .shortcut .contact-us{
   width: 20%;
 }
-.shortcut .contact-us h6{
-  font-size: 1.5rem;
+.shortcut .contact-us h3{
+  font-size: 24px;
+  font-weight: bold;
   position: relative;
-  top: -20px;
+  top: -40px;
   
 }
 .shortcut .contact-us{
   position: relative;
   left:950px ;
-  bottom: 400px;
+  bottom: 450px;
+  translate: ;
 
 }
+.shortcut .contact-us a:hover ,
+.shortcut .menu li a:hover{
+  color:#d33a11 ;
+  transition: color 2s ease-in-out  ;
+}
+.shortcut .contact-us .email{
+  font-size: 15px;
+}
 .shortcut .contact-us .address a::before{
-    content: url(../images/icons/map-icon.png);
+  content: url(../images/icons/pin\ \(1\).png)
 }
 .shortcut .contact-us .call a::before{
-    content: url(../images/icons/call-icon.png);
+  content: url(../images/icons/phone\ \(2\).png);
 }
 .shortcut .contact-us .email a::before{
-    content: url(../images/icons/mail-icon.png);
+  content: url(../images/icons/mail\ \(2\).png);
 }
 /*footer*/
 footer a{
@@ -195,3 +233,6 @@ footer{
   position: relative;
   top: -70px;
 }
+
+
+
